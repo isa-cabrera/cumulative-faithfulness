@@ -2,6 +2,8 @@ PennController.ResetPrefix(null)
 
 DebugOff()
 
+Sequence(shuffle("images"))
+
 Template("images.csv", row =>
     newTrial("images", 
         newImage("sgimage", row.singular)
